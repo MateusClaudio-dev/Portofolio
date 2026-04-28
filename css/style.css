@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: aqua;
+    --cor-extra: grey;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+    padding: 1.5% 0 0 15%;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 1.25rem;
+    color: var(--cor-extra);
+    
+}
+
+.cabecalho__menu__link:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
+    padding: 5px;
+    border-radius: 3px;
+    border-bottom: solid 1px var(--cor-terciaria);
+    transition: 0.3s;
+}
+
+.apresentacao {
+    box-sizing: border-box;
+    padding: 1.1% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.conteudo__titulo {
+    font-size: 1.9rem;
+    font-family: var(--fonte-primaria)
+}
+
+strong {
+    color: var(--cor-terciaria);
+}
+
+.conteudo__sub-titulo {
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria)
+}
+
+
+.apresentacao__imagem {
+    border-radius: 10%;
+    border: 3px solid var(--cor-terciaria);
+    width: 35%;
+}
+
+.conteudo__links {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.titulo-container__links {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.link__redes-sociais {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    width: 50%;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 10px ;
+    margin-top: 21px;
+
+}
+
+.link__redes-sociais:hover {
+    background-color: var(--cor-hover);
+}
+
+.icon-redes-sociais {
+    border: none;
+    width: 10%;
+    height: 10%;
+}
+
+.rodape {
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    color: var(--cor-primaria);
+    position: fixed;
+    font-weight: 400px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-terciaria)
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 5%;
+        justify-content: space-around;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .conteudo__links {
+        align-items: center;
+    }
+
+}

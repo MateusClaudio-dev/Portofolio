@@ -1,0 +1,37 @@
+.projetos {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dignitec {
+    border: none;
+    border-radius: 0px;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    height: 50%;
+    width: 25%;
+}
+
+.dignitec:hover {
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+    .projetos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .dignitec {
+        margin-left: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
