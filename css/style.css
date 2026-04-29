@@ -132,7 +132,6 @@ strong {
     bottom: 0;
     width: 100%;
     padding: 15px;
-    position: fixed;
     color: var(--cor-primaria);
     font-weight: 400px;
     text-align: center;
