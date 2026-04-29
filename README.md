@@ -1,7 +1,6 @@
 # Meu Portfólio
 
-Este é o meu portfólio pessoal, desenvolvido para apresentar meu currículo, projetos, habilidades e informações de contato. <br>
-O foco principal foi criar uma interface limpa para consolidar meus conhecimentos iniciais e práticar o domínio das seguintes ferramentas:
+Este é o meu portfólio pessoal, desenvolvido para apresentar meu currículo, projetos, habilidades e informações de contato. O foco principal foi criar uma interface limpa para consolidar meus conhecimentos iniciais e práticar o domínio das seguintes ferramentas:
 
 *   **HTML5**: Estruturação semântica da página.
 *   **CSS3**: Estilização moderna utilizando **Flexbox** para garantir a responsividade.
