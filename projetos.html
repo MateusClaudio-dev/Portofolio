@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Projetos</title>
 </head>
 <body>
     <header>
+        <span id="open__menu"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></span>
         <nav class="cabecalho">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="index.html">Inicio</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a> 
             <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
         </nav>
+        <div class="cabecalho__mobile">
+            <span id="exit__menu"><i class="fa-solid fa-xmark" style="color: rgb(255, 255, 255);"></i></span>
+            <a class="cabecalho__menu__link__mobile" href="index.html">Inicio</a>
+            <a class="cabecalho__menu__link__mobile" href="projetos.html">Projetos</a> 
+            <a class="cabecalho__menu__link__mobile" href="curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__link__mobile" href="about.html">Sobre mim</a>
+        </div>
     </header>
     
     <main class="apresentacao">
@@ -26,6 +36,6 @@
     <footer class="rodape">
         <p>mateusclaudio.dev@gmail.com</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
