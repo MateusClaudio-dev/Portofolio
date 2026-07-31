@@ -30,3 +30,10 @@ document.querySelectorAll('.nav-link').forEach(link => {
         bars[2].style.transform = 'none';
     });
 });
+
+// Limpa os campos do formulário automaticamente ao sair/retornar da página
+window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName('form')) {
+        form.reset();
+    }
+};
