@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: aqua;
+    --cor-extra: grey;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__mobile {
+    display: none;
+}
+
+#open__menu {
+    display: none;
+}
+
+.cabecalho {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+    padding: 1.5% 0 0 15%;
+}
+
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 1.25rem;
+    color: var(--cor-extra);
+    
+}
+
+.cabecalho__menu__link:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
+    padding: 5px;
+    border-radius: 3px;
+    border-bottom: solid 1px var(--cor-terciaria);
+    transition: 0.3s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.apresentacao {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1.1% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.conteudo__titulo {
+    font-size: 1.9rem;
+    font-family: var(--fonte-primaria)
+}
+
+strong {
+    color: var(--cor-terciaria);
+}
+
+.conteudo__sub-titulo {
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria)
+}
+
+
+.apresentacao__imagem {
+    border-radius: 10%;
+    border: 3px solid var(--cor-terciaria);
+    width: 35%;
+}
+
+.conteudo__links {
+    padding: 1.1% 15%;
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.titulo-container__links {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.link__redes-sociais {
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    width: 50%;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 10px ;
+    margin-top: 21px;
+
+}
+
+.link__redes-sociais:hover {
+    background-color: var(--cor-hover);
+}
+
+.icon-redes-sociais {
+    border: none;
+    width: 10%;
+    height: 10%;
+}
+
+.rodape {
+    bottom: 0;
+    width: 100%;
+    padding:  15px;
+    position: fixed;
+    color: var(--cor-primaria);
+    font-weight: 400px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-terciaria)
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .apresentacao {
+        margin-top: 0;
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .conteudo__links {
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+    }
+
+    .cabecalho {
+        display: none;
+    }
+
+    #open__menu {
+        scale: 1.5;
+        padding: 20px;
+        display: flex;
+        color: rgb(140, 173, 19);
+    }
+
+    #exit__menu {
+        display: flex;
+        margin-left: 85%;
+        scale: 1.5;
+    }
+
+    .cabecalho__mobile {
+        display: none;
+        gap: 15px;
+        padding: 5%;
+        margin-top: 1px;
+        align-items: start;
+        flex-direction: column;
+        height: 100vh;
+        width: 40%;
+        position: fixed;
+        background-color: var(--cor-terciaria);
+    }
+
+    .cabecalho__menu__link__mobile {
+        text-decoration: none;
+        color: var(--cor-primaria);
+        top: 1px;
+    }
+}
+
+/*CONTAINER CONHECIMENTOS*/
+.softSkills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   /* Centraliza o grupo de blocos horizontalmente */
+    align-items: stretch;      /* Mantém os blocos com a mesma altura */
+    gap: 30px;                 /* Espaço horizontal entre Front-End e Ferramentas */
+    
+    /* Permite adaptação em telas de celular, mas prioriza lado a lado no PC */
+    flex-wrap: wrap;           
+    
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;         /* Define um limite para o conteúdo não espalhar demais em telas ultra-wides */
+    margin: 0 auto;            /* Garante que a section inteira se centralize na página */
+    box-sizing: border-box;
+}
+
+
+.container_conhecimentos {
+    background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px aqua;
+    /* flex: 1 faz com que os dois blocos dividam o espaço disponível igualmente */
+    flex: 1;                   
+    min-width: 300px;          /* Largura mínima para não esmagar os cards no mobile */
+    max-width: 450px;          /* Largura máxima ideal para organizar os cards em colunas */
+    box-sizing: border-box;
+}
+
+.container_conhecimentos h2 {
+    font-size: 1.5rem;
+    margin: 0 0 25px 0;
+    font-weight: 700;
+}
+
+
+   /*GRID / ALINHAMENTO DOS CARDS*/
+
+.container_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;           /* Os cards dentro do bloco continuam quebrando linha */
+    gap: 16px;
+    justify-content: flex-start; /* Alinha os cards à esquerda dentro de suas respectivas caixas */
+}
+
+/* ESTILIZAÇÃO DO CARD (CENTRALIZAÇÃO ABSOLUTA)*/
+.card {
+    background-color: rgb(73, 81, 92);
+    border-radius: 12px;
+    width: 105px;
+    min-height: 105px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: solid 1px aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.card small {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #ffffff;
+    word-break: break-word;
+    width: 100%;
+}
