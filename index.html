@@ -60,7 +60,7 @@
                 </div>
                 <div class="hero-visual">
                     <div class="hero-avatar">
-                        <img src="/img/MateusImgPerfil.jpg" alt="">
+                        <img src="img/MateusImgPerfil.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -219,16 +219,20 @@
                             <a href="https://wa.me/5571983828278" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
-                    <form class="contact-form" action="https://formspree.io/f/seu-id-aqui" method="POST">
+                    <form class="contact-form" action="https://formspree.io/f/mjgndnnw" method="POST">
                         <div class="input-group">
-                            <input type="text" name="name" required placeholder="Seu Nome">
+                            <input type="text" name="Nome" required placeholder="Seu Nome">
                         </div>
                         <div class="input-group">
-                            <input type="email" name="email" required placeholder="Seu E-mail">
+                            <input type="email" name="_replyto" required placeholder="Seu E-mail">
                         </div>
                         <div class="input-group">
-                            <textarea name="message" rows="5" required placeholder="Sua Mensagem"></textarea>
+                            <textarea name="Mensagem" rows="5" required placeholder="Sua Mensagem"></textarea>
                         </div>
+
+                        <!-- Evitar Spams e Bots -->
+                        <input type="hidden" name="_subject" value="Novo contato do Portfólio!">
+
                         <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
                     </form>
                 </div>
